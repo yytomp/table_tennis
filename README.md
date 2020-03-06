@@ -1,12 +1,4 @@
-# Ionata Django Skeleton
-
-
-## Manual steps after cloning the skeleton repo
-* Address all the points in this section then delete it from this file
-* Rename the heading at the top of this file to be the name of the project
-* Address any `TODO`s in `src/webapp/settings.py`
-* Address any `TODO`s in `example.env`
-* Address any `TODO`s in `pyproject.toml`
+# Table Tennis
 
 
 ## Base Django project

@@ -1,6 +1,5 @@
 [tool.poetry]
-# TODO: update the name and description
-name = "ionata-django-skeleton"
+name = "TableTennis"
 version = "0.1.0"
 description = ""
 authors = ["Ionata <webmaster@ionata.com.au>"]

@@ -37,8 +37,7 @@ if DEBUG:
 env = Env(**scheme)
 
 # Core
-# TODO: set the PROJECT_NAME setting - do not include spaces in this name
-PROJECT_NAME: str = "<INSERT_PROJECT_NAME_HERE>"
+PROJECT_NAME: str = "TableTennis"
 SECRET_KEY: str = env("SECRET_KEY")
 SITE_URL: str = env("SITE_URL")
 # NOTE: We do not use the axes middleware because we want login attempts to

@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     # Project apps
     "webapp",
     "users",
+    "table_tennis",
     # Our defaults
     "corsheaders",
     "anymail",

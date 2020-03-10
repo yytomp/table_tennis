@@ -1,7 +1,7 @@
 """Views for the table_tennis app."""
+from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import AllowAny
 from rest_framework_json_api import views
-from rest_framework.exceptions import PermissionDenied
 
 from table_tennis import models, serializers
 
@@ -20,3 +20,11 @@ class GameView(views.ModelViewSet):
             return super().update(request, *args, **kwargs)
 
         raise PermissionDenied("permission denied")
+
+
+class MatchView(views.ModelViewSet):
+    """matches endpoint."""
+
+    queryset = models.Match.objects.all()
+    serializer_class = serializers.MatchSerializer
+    permission_classes = [AllowAny]

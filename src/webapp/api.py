@@ -5,8 +5,8 @@ from django.urls import include, path  # type: ignore
 from rest_framework.routers import DefaultRouter  # type: ignore
 from rest_framework.viewsets import ViewSetMixin  # type: ignore
 
-from users import views as user_views  # type: ignore
 from table_tennis import views as table_tennis_views
+from users import views as user_views  # type: ignore
 
 # Add viewsets here. The first argument is the name and the URL regex
 routes: List[Tuple[str, ViewSetMixin]] = [
@@ -15,6 +15,7 @@ routes: List[Tuple[str, ViewSetMixin]] = [
     ("password-resets", user_views.PasswordResetView),
     ("password-reset-confirmations", user_views.PasswordResetConfirmView),
     ("games", table_tennis_views.GameView),
+    ("matches", table_tennis_views.MatchView),
 ]
 
 v1_router = DefaultRouter()
